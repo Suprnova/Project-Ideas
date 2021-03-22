@@ -57,3 +57,24 @@
   * It's pretty useless. There's no chance of it being included in a pull request to the main Dolphin repository because of how niche it is, and would become outdated quickly with the addition of new commits and updates to the main Dolphin repository.
   * There's a huge amount of games that can be played on Dolphin, how do I decide what games to incorporate support for?
   * What's the best way to watch the RAM values?
+
+## Customizable Discord Rich Presence Framework
+
+* Description: A desktop application/tray application that displays a custom Discord Rich Presence status with no coding experience required on the Client side.
+* Languages:
+  * C# (.NET Core)
+* Environments:
+  * WPF
+  * NotifyTray
+* Features:
+  * A sleek window that provides options for the state, details, large and small image, as well as their corresponding text.
+  * A system tray menu that allows you to change the options for the Rich Presence with simple textbox popups for the text, and ComboBoxes for selecting images.
+  * A guide on how to set up the Discord application from the Discord Developer Portal and upload the corresponding images.
+* Philosophy:
+  * Custom Rich Presence looks cool.
+  * Custom Rich Presence (if an application like this doesn't already exist) is impossible for someone to do without coding knowledge.
+  * This would act as an extension of your Discord profile, like extra customization.
+* Obstacles:
+  * Does an application like this already exist?
+  * How does NotifyTray work? Tray applications have always confused me.
+  * Designing WPF UIs has never been my strongsuit. I'd want it to look modern instead of generic looking.
