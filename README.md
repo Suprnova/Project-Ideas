@@ -35,3 +35,25 @@
       * Cons: The time it takes between the message being sent to the client and the message then being filtered/shown to the user can be very large, high network usage, requires payment for the servers hosting it, training it against false advertising messages can be damaging.
       * Additional obstacles: Should a human filter submitted advertising messages to ensure that they are valid? Would the delivery of the model be slowed if multiple users are trying to download it at the same time? How will uploaded messages be handled? (Creating an API? What language should it be in? PHP? Ruby? What other languages would I have to learn?)
   * Does the uploading and storage of messages sent on Hypixel violate the privacy policy of Hypixel or privacy laws? After all, no consent is provided by the users sending messages, which are tested against the model or possibly even train the model.
+
+## Dolphin In-Game Rich Presence
+
+* Description: A fork of the Dolphin Emulator that incorporates Discord Rich Presence for specific games that includes information such as the level of the player, the world that the player is in, etc..
+* Languages:
+  * C++ (No experience)
+* Environments:
+  * Windows
+* Features:
+  * A wide array of supported games.
+  * Options to toggle which games to display Rich Presence for, or to simply use the default Dolphin Rich Presence options.
+* How to Accomplish:
+  * RAM watching specific values that store information about the details being displayed in the Rich Presence. JSON files used in the event that the specific value needs to be interpreted into another value, like the ID of a world being translated into the actual world name.
+* Philosophy:
+  * Discord Rich Presence is just a cool feature in general.
+  * Having information about the state of the game being played rather than just the name of the game itself would be useful.
+* Obstacles:
+  * No experience in C++ or the packages I'd likely have to use.
+    * I'd probably be able to use the existing code for Dolphin as a reference.
+  * It's pretty useless. There's no chance of it being included in a pull request to the main Dolphin repository because of how niche it is, and would become outdated quickly with the addition of new commits and updates to the main Dolphin repository.
+  * There's a huge amount of games that can be played on Dolphin, how do I decide what games to incorporate support for?
+  * What's the best way to watch the RAM values?
